@@ -1,0 +1,23 @@
+.product-detail-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .image-thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .thumbnail:hover {
+    transform: scale(1.1);
+  }
+    

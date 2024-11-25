@@ -1,13 +1,9 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sidebar-sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0; /* Khoảng cách từ đỉnh của sidebar tới đầu trang */
+  height: 100vh; /* Chiều cao của sidebar, cho phù hợp với toàn bộ chiều cao màn hình */
+  z-index: 1000;
+  background-color: #fff; /* Đảm bảo background khi cuộn không bị mờ */
+  padding: 10px;
 }

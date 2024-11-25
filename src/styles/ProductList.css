@@ -1,0 +1,31 @@
+.product-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Phóng to nhẹ khi di chuột */
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+  
+  .product-image {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-container:hover .product-image {
+    transform: scale(1.2); /* Phóng to ảnh khi di chuột vào */
+  }
+  
+  .product-price {
+    font-weight: bold;
+    color: #28a745; /* Màu xanh lá cây cho giá */
+  }
+  

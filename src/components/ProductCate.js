@@ -1,21 +1,24 @@
+// src/components/ProductCategories.js
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import hatmeo from '../img/hatmeo.webp';
-import xuongcho from '../img/xuongho.webp';
-import patemeo from '../img/patemeo.webp';
-import '../styles/ProductCategories.css'; // Import a custom CSS file
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import odem from '../img/odem.webp';
+import xitkhuan from '../img/khukhuan.webp';
+import balo from '../img/balo.webp';
+import '../styles/ProductCate.css'; // CSS tùy chỉnh
 
-const ProductCategories = () => {
+
+
+const ProductCate = () => {
     const categories = [
-        { id: 1, img: hatmeo,  },
-        { id: 2, img: xuongcho,},
-        { id: 3, img: patemeo, },
+        { id: 1, img: odem,  },
+        { id: 2, img: xitkhuan,},
+        { id: 3, img: balo, },
 
     ];
 
     return (
         <Container>
-            <h2 className="text-center my-4">Danh mục sản phẩm</h2> {/* Title for categories */}
+          
             <Row>
                 {categories.map(category => (
                     <Col md={4} key={category.id} className="mb-4">
@@ -32,4 +35,4 @@ const ProductCategories = () => {
     );
 };
 
-export default ProductCategories;
+export default ProductCate;
